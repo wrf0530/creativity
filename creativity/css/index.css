@@ -1,0 +1,383 @@
+
+/*清除默认样式*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+/*头部*/
+.head-box {
+    width: 100%;
+    height: 60px;
+    background: #f8f8f8;
+}
+
+.nav-box {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-box img {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+.logo-box{
+    text-align: left;
+}
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2f2e2e;
+    letter-spacing: 5px;
+    padding-left: 10px;
+}
+.more .icon-gengduo{
+    font-size: 24px;
+    text-align: right;
+}
+.more{
+    text-align: right;
+}
+
+.background-img .white-square{
+    width: 360px;
+    height: 460px;
+    margin: 200px auto;
+    background-color: #fff;
+    padding: 70px 60px;
+    text-align: center;
+}
+.background-img .white-square p{
+    font-size: 90px;
+    line-height: 1;
+    font-weight: bold;
+    word-wrap: break-word;word-break: break-all;overflow: hidden;
+}
+.background-img .white-square p i{
+    text-align: center;
+}
+.xuan-zhuan i{
+    font-size: 30px;
+}
+.white-square:hover .xuan-zhuan{
+    transform: rotate(360deg);
+    transition: all 0.7s;
+}
+/*banner图*/
+.banner-box{
+    background-image: url("../images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+/*服务介绍*/
+.services-title{
+    padding: 100px 0;
+}
+.services-title p:first-child{
+    font-size: 22px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.services-title p:nth-child(2){
+    width: 40px;
+    height: 3px;
+    background: #f7931d;
+    margin:0 auto;
+}
+@media screen and ( min-width: 1200px ){
+    .int{
+        padding: 0 200px;
+    }
+}
+.int{
+
+    padding-top: 80px;
+}
+@media screen and (max-width: 768px){
+    .services-img{
+        margin-top: 60px;
+    }
+}
+.services-img img{
+    width: 100%;
+    height: auto;
+}
+.services-text{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.services-text1{
+    font-size: 14px;
+    line-height: 180%;
+}
+/*图片部分*/
+.pic-box{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+.masking-box{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.content img{
+    width: 100%;
+    height: auto;
+}
+.masking-text{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.masking-text h2{
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.masking-text p{
+    font-size: 18px;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+}
+.masking-box:hover .masking-text{
+    transform: scale(0.8);
+    transition: all 2s;
+    opacity: 0;
+}
+.masking-box:hover img{
+    transform: scale(1.2,1.2);
+    transition: all 1s;
+}
+.masking{
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    opacity:0;
+}
+.masking-box:hover .masking {
+    opacity: 5;
+}
+.masking-box:hover .masking-text{
+     transform: scale(0.8);
+     transition: all 1s;
+     opacity:9;
+}
+/*关于我们*/
+
+.about-title p:first-child{
+    font-size: 22px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.about-title p:nth-child(2) {
+    width: 40px;
+    height: 3px;
+    background: #f7931d;
+    margin: 0 auto;
+}
+.about-content{
+    margin-top: 60px;
+}
+.about-right{
+    margin: 0 auto;
+}
+.about-left p:first-child{
+    color: #2f2e2e;
+    font-size: 65px;
+    font-weight: bold;
+}
+.about-left p:nth-child(2){
+    color: #2f2e2e;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.about-left p:nth-child(3){
+    font-size: 14px;
+    color: #2f2e2e;
+    line-height: 150%;
+}
+.about-right p:first-child,.about-right p:nth-child(3){
+    font-size: 14px;
+    color: #2f2e2e;
+}
+.about-right p:nth-child(2){
+    font-size: 14px;
+    color: #2f2e2e;
+    margin: 20px 0;
+}
+.about-right img{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+@media screen and (max-width: 768px){
+    .about-left{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .about-right{
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+}
+.per{
+    margin-top: 100px;
+}
+.shot{
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    border-radius:50%;
+    overflow: hidden;
+}
+.shot img{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+}
+.duyan{
+    font-size: 18px;
+    color: #2f2e2e;
+    text-align: center;
+    margin-top: 10px;
+}
+.introduction{
+    font-size: 16px;
+    color:#2f2e2e;
+    text-align: center;
+    margin: 40px 150px;
+    line-height: 180%;
+}
+@media screen and (max-width: 768px){
+    .introduction{
+        margin: 40px auto;
+        padding-top: 20px;
+
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .introduction{
+        margin: 40px auto;
+
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .introduction {
+        margin: 40px auto;
+    }
+}
+.dot{
+    width: 160px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    height: 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .dot{
+        margin: 10px auto;
+    }
+}
+.dot-1{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px #2f2e2e solid;
+    margin: 5px 10px;
+    float: left;
+}
+.dot-2{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: dimgray;
+    margin: 5px 10px;
+    float: left;
+}
+.dot-2:hover{
+    background: black;
+}
+/*底部*/
+footer{
+    background-image: url("../images/footer-img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.footer{
+    overflow: hidden;
+    width: 100%;
+    /*height: 1000px;*/
+    padding: 90px 0 90px 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+}
+.clients{
+    margin-top: 50px;
+}
+.clients img{
+    width: 130px;
+    height: auto;
+}
+.slide{
+    display: none;
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .slide{
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .slide{
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/*版本号*/
+.version-box{
+    width: 100%;
+    background: #2f2e2e;
+}
+.version-content{
+    font-size: 14px;
+    color: #999999;
+    padding: 30px 0;
+    text-align: center;
+}
